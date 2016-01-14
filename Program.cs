@@ -18,6 +18,7 @@ namespace DataGenerator
                 .Select(t => data.Generate());
 
             new ConsoleSink().Subscribe(observable);
+            new FileSink("data.txt").Subscribe(observable);
 
             Console.ReadLine();
         }
