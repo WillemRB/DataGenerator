@@ -61,6 +61,7 @@
     <Compile Include="Sinks\ConsoleSink.cs" />
     <Compile Include="Sinks\FileSink.cs" />
     <Compile Include="Sinks\ISink.cs" />
+    <Compile Include="Sinks\UdpSink.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
