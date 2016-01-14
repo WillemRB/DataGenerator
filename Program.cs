@@ -9,9 +9,9 @@ namespace DataGenerator
     {
         static void Main(string[] args)
         {
-            var data = new Fare.Xeger(ConfigurationSettings.AppSettings["pattern"]);
+            var data = new Fare.Xeger(ConfigurationManager.AppSettings["pattern"]);
 
-            var tick = TimeSpan.Parse(ConfigurationSettings.AppSettings["timespan"]);
+            var tick = TimeSpan.Parse(ConfigurationManager.AppSettings["timespan"]);
 
             var observable = Observable
                 .Timer(TimeSpan.Zero, tick)
