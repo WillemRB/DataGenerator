@@ -3,7 +3,7 @@ using System.IO;
 
 namespace DataGenerator.Sinks
 {
-    public class FileSink : ISink
+    public class FileSink : ISink<string>
     {
         public string FilePath { get; private set; }
 

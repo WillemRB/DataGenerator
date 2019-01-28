@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataGenerator.Sinks
 {
-    public class UdpSink : ISink
+    public class UdpSink : ISink<string>
     {
         private readonly UdpClient _client;
 

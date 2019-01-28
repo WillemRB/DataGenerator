@@ -2,7 +2,7 @@
 
 namespace DataGenerator.Sinks
 {
-    public class ConsoleSink : ISink
+    public class ConsoleSink : ISink<string>
     {
         public IDisposable Subscribe(IObservable<string> observable)
         {

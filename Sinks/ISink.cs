@@ -2,8 +2,8 @@
 
 namespace DataGenerator.Sinks
 {
-    interface ISink
+    interface ISink<T>
     {
-        IDisposable Subscribe(IObservable<string> observable);
+        IDisposable Subscribe(IObservable<T> observable);
     }
 }
